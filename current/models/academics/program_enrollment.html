@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Student Group</title>
+	<title>Program Enrollment</title>
 	<meta name="generator" content="frappe">
     <link type="text/css" rel="stylesheet" href="https://frappe.github.io/schools/assets/css/bootstrap.css">
     <link type="text/css" rel="stylesheet" href="https://frappe.github.io/schools/assets/css/hljs.css">
@@ -24,14 +24,14 @@
 		href="/assets/img/favicon.ico"
 		type="image/x-icon">
     
-<meta name="name" content="Student Group" data-html-block="meta_block">
+<meta name="name" content="Program Enrollment" data-html-block="meta_block">
 <meta name="twitter:card" content="summary" data-html-block="meta_block">
-<meta name="twitter:description" content="Version 0.0.0 Source Table Name: tabStudent Group Fields &lt;" data-html-block="meta_block">
+<meta name="twitter:description" content="Version 0.0.0 Source Table Name: tabProgram Enrollment &lt;h3" data-html-block="meta_block">
 <meta name="og:type" content="article" data-html-block="meta_block">
-<meta name="og:description" content="Version 0.0.0 Source Table Name: tabStudent Group Fields &lt;" data-html-block="meta_block">
-<meta name="og:title" content="Student Group" data-html-block="meta_block">
-<meta name="twitter:title" content="Student Group" data-html-block="meta_block">
-<meta name="description" content="Version 0.0.0 Source Table Name: tabStudent Group Fields &lt;" data-html-block="meta_block">
+<meta name="og:description" content="Version 0.0.0 Source Table Name: tabProgram Enrollment &lt;h3" data-html-block="meta_block">
+<meta name="og:title" content="Program Enrollment" data-html-block="meta_block">
+<meta name="twitter:title" content="Program Enrollment" data-html-block="meta_block">
+<meta name="description" content="Version 0.0.0 Source Table Name: tabProgram Enrollment &lt;h3" data-html-block="meta_block">
 
 		
 			<style data-html-block="style"></style></head>
@@ -76,13 +76,13 @@
 <script>$(function() { $('.dropdown-toggle').dropdown(); });</script><div class="hero-and-content">
                         
                             <div class="container">
-                            <div class="page-container" id="page-student_group" data-path="current/models/academics/student_group"
+                            <div class="page-container" id="page-program_enrollment" data-path="current/models/academics/program_enrollment"
     data-doctype="Web Page">
 	<div class="page-content">
     	<div class="page-content-wrapper">
             <div class="row">
                 <div class="col-sm-8">
-            		<div class="page-header-block" data-html-block="header"><h1>Student Group</h1></div>
+            		<div class="page-header-block" data-html-block="header"><h1>Program Enrollment</h1></div>
                 </div>
                 <div class="col-sm-4">
             		<div class="page-header-actions-block" data-html-block="header-actions"></div>
@@ -101,8 +101,8 @@
     	    <div class="page-content-block">
 <div class="webpage-content">
 	
-	<article class="web-page-content" id="student_group" style="text-align: Left">
-	<!-- title: Student Group -->
+	<article class="web-page-content" id="program_enrollment" style="text-align: Left">
+	<!-- title: Program Enrollment -->
 
 
 
@@ -114,7 +114,7 @@
 	Version 0.0.0</a>
 
 
-	<a class="btn btn-default btn-sm" href="https://github.com/frappe/schools/tree/develop/schools/academics/doctype/student_group"
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/schools/tree/develop/schools/academics/doctype/program_enrollment"
 		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
 
 </div>
@@ -123,7 +123,7 @@
 
 
 
-    <p><b>Table Name:</b> <code>tabStudent Group</code></p>
+    <p><b>Table Name:</b> <code>tabProgram Enrollment</code></p>
 
 
 
@@ -144,23 +144,11 @@
         
         <tr >
             <td>1</td>
-            <td class="danger" title="Mandatory"><code>group_name</code></td>
-            <td >
-                Data</td>
-            <td >
-                Group Name
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>2</td>
-            <td ><code>academic_term</code></td>
+            <td class="danger" title="Mandatory"><code>student</code></td>
             <td >
                 Link</td>
             <td >
-                Academic Term
+                Student
                 
             </td>
             <td>
@@ -168,37 +156,30 @@
                 
 
 
-<a href="https://frappe.github.io/schools/current/models/academics/academic_term">Academic Term</a>
+<a href="https://frappe.github.io/schools/current/models/academics/student">Student</a>
 
 
                 
+            </td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td ><code>student_name</code></td>
+            <td >
+                Read Only</td>
+            <td >
+                Student Name
+                
+            </td>
+            <td>
+                <pre>student.title</pre>
             </td>
         </tr>
         
         <tr >
             <td>3</td>
-            <td ><code>academic_year</code></td>
-            <td >
-                Link</td>
-            <td >
-                Academic Year
-                
-            </td>
-            <td>
-                
-                
-
-
-<a href="https://frappe.github.io/schools/current/models/academics/academic_year">Academic Year</a>
-
-
-                
-            </td>
-        </tr>
-        
-        <tr >
-            <td>4</td>
-            <td ><code>column_break_3</code></td>
+            <td ><code>column_break_4</code></td>
             <td class="info">
                 Column Break</td>
             <td >
@@ -209,8 +190,8 @@
         </tr>
         
         <tr >
-            <td>5</td>
-            <td ><code>program</code></td>
+            <td>4</td>
+            <td class="danger" title="Mandatory"><code>program</code></td>
             <td >
                 Link</td>
             <td >
@@ -230,12 +211,12 @@
         </tr>
         
         <tr >
-            <td>6</td>
-            <td class="danger" title="Mandatory"><code>course</code></td>
+            <td>5</td>
+            <td class="danger" title="Mandatory"><code>academic_year</code></td>
             <td >
                 Link</td>
             <td >
-                Course
+                Academic Year
                 
             </td>
             <td>
@@ -243,20 +224,32 @@
                 
 
 
-<a href="https://frappe.github.io/schools/current/models/academics/course">Course</a>
+<a href="https://frappe.github.io/schools/current/models/academics/academic_year">Academic Year</a>
 
 
                 
             </td>
         </tr>
         
+        <tr >
+            <td>6</td>
+            <td class="danger" title="Mandatory"><code>enrollment_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                Enrollment Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
         <tr class="info">
             <td>7</td>
-            <td ><code>section_break_6</code></td>
+            <td ><code>section_break_7</code></td>
             <td >
                 Section Break</td>
             <td >
-                Students
+                
                 
             </td>
             <td></td>
@@ -264,11 +257,11 @@
         
         <tr >
             <td>8</td>
-            <td ><code>students</code></td>
+            <td ><code>courses</code></td>
             <td >
                 Table</td>
             <td >
-                Students
+                Courses
                 
             </td>
             <td>
@@ -276,7 +269,7 @@
                 
 
 
-<a href="https://frappe.github.io/schools/current/models/academics/student_group_student">Student Group Student</a>
+<a href="https://frappe.github.io/schools/current/models/academics/program_enrollment_course">Program Enrollment Course</a>
 
 
                 
@@ -289,7 +282,7 @@
 
     <hr>
     <h3>Controller</h3>
-    <h4>schools.academics.doctype.student_group.student_group</h4>
+    <h4>schools.academics.doctype.program_enrollment.program_enrollment</h4>
 
     
 
@@ -297,7 +290,7 @@
 
 	
         
-	<h3 style="font-weight: normal;">Class <b>StudentGroup</b></h3>
+	<h3 style="font-weight: normal;">Class <b>ProgramEnrollment</b></h3>
     
     <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
     
@@ -310,67 +303,8 @@
 
 	
 
-	
-        
-    
-    <p><span class="label label-info">Public API</span>
-        <br><code>/api/method/schools.academics.doctype.student_group.student_group.get_students</code>
-    </p>
-	<p class="docs-attr-name">
-        <a name="schools.academics.doctype.student_group.student_group.get_students" href="#schools.academics.doctype.student_group.student_group.get_students" class="text-muted small">
-            <i class="icon-link small" style="color: #ccc;"></i></a>
-		schools.academics.doctype.student_group.student_group.<b>get_students</b>
-        <i class="text-muted">(student_group)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-	
-
 
     
-    
-        <h4>Linked In:</h4>
-        <ul>
-        
-			
-            <li>
-
-
-<a href="https://frappe.github.io/schools/current/models/academics/course_schedule">Course Schedule</a>
-
-</li>
-			
-        
-			
-            <li>
-
-
-<a href="https://frappe.github.io/schools/current/models/academics/examination">Examination</a>
-
-</li>
-			
-        
-			
-            <li>
-
-
-<a href="https://frappe.github.io/schools/current/models/academics/scheduling_tool">Scheduling Tool</a>
-
-</li>
-			
-        
-			
-            <li>
-
-
-<a href="https://frappe.github.io/schools/current/models/academics/student_course">Student Course</a>
-
-</li>
-			
-        
-        </ul>
     
 
 
